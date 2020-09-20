@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #a9508b 3px solid;
+}
+header #box-left {
+  float: left;
+}
+header #box-left h1 {
+  margin: 0;
+}
+header .highlight,
+header .current a {
+  color: #a9508b;
+  font-weight: bold;
+}
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header #nav-right {
+  float: right;
+  margin: 10px;
+}
+header #nav-right ul {
+  margin: 0;
+  padding: 0;
+}
+header #nav-right ul li {
+  float: left;
+  display: inline;
+  padding: 0px 20px;
+  text-transform: uppercase;
+}
+header #nav-right button {
+  font-size: 24px;
+  color: #ffffff;
+  display: none;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+  header .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  header .container #nav-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: #a9508b;
+  }
+
+
+  header .container #nav-right .hamburger{
+    
+  }
+  header .container .nav-right-ul {
+    display: none;
+  }
+  .nav-right-ul.show{
+    display: flex !important;
+    flex-direction: column;
+
+  }
+
+  .nav-right-ul.show li{
+    display: block !important;
+  }
+
+  header .container #nav-right button {
+    display: block;
+    
+  }
+}
+    #newsletter .container form{
+      margin-left:0px;
+    }
+  
+  
+  
+  
+  
+  
+  #newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background-color: #32454a;
+  }
+  #newsletter h1 {
+    float: left;
+  }
+  #newsletter form {
+    float: right;
+    margin-top: 15px;
+  }
+  #newsletter input[type=email] {
+    padding: 4px;
+    height: 38px;
+    width: 250px;
+  }
+  #newsletter .button1 {
+    height: 38px;
+    background: #a9508b;
+    border: 0;
+    padding-left: 0px 20px;
+    color: #ffffff;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #newsletter .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+.div_left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: black;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    background-color: #35424a;
+    width: 35%;
+    height: 325px;
+    margin-left: 7%;
+}
+
+#services2 {
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+
+#design {
+    background-color: #e6e6e6;
+    margin-top: 20px;
+    border: 1px solid #cfcfcf;
+    height: 190px;
+}
+
+#maintenance {
+    background-color: #e6e6e6;
+    margin-top: 8px;
+    border: 1px solid #cfcfcf;
+    height: 190px;
+}
+
+#hosting {
+    background-color: #e6e6e6;
+    margin-top: 8px;
+    border: 1px solid #cfcfcf;
+    height: 190px;
+}
+
+.div_text {
+    padding: 3%;
+}
+
+.div_header {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.div_lorem {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#form_header {
+    margin-top: 35px;
+    margin-left: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+form {
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.user_text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 87%;
+}
+
+#name {
+    width: 100%;
+    height: 25px;
+}
+
+#email {
+    width: 100%;
+    height: 25px;
+}
+
+#message {
+    width: 100%;
+    height: 35px;
+}
+
+input[type=submit] {
+    background-color: #a9508b;
+    border: none;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    padding-left: 5px;
+}
+
+textarea::placeholder {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+@media only screen and (max-width:768px){
+
+  .main{
+    display:flex;
+    flex-flow: column-reverse nowrap;
+  }
+
+  .div_left{
+    width:100%;
+  }
+  #form{
+    width:100%;
+    margin:0px;
+  }
+
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+  background-color: #fffaf0;
+  text-align: center;
+  border-top: 3px solid #a9508b;
+}

@@ -1,0 +1,30 @@
+#main{
+    min-height:400px;
+    background: url(./images/showcase.jpg);
+    /* background-image: no-repeat; */
+    text-align: center;
+    
+}
+
+#main h1{
+    font-size: 55px;
+    margin-top:100px;
+    margin-bottom:10px; 
+}
+
+#main p{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:768px){
+    #main{
+        .container{
+            h1{
+                font-size: 40px;
+            }
+            p{
+
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+#boxes{
+    margin-top: 20px;
+    color: #000000;
+
+    .box{
+        float: left;
+        text-align: center;
+        width: 30%;
+        padding: 10px;
+
+
+    }
+
+    img{
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #boxes{
+        .container{
+            display: flex;
+            flex-direction: column;
+            .box{
+                width: 100%;
+                display: flex;
+                h3{
+                    padding-left: 20px;
+                }
+                p{
+                    padding-left:20px;
+                    text-align: justify;
+                }
+                
+                    
+                
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:550px){
+    #boxes{
+        .container{
+            .box{
+                img{
+                    
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,42 @@
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background-color: #32454a;
+
+    h1{
+        float: left;
+    }
+    form{
+        float: right;
+        margin-top: 15px;
+        
+        
+        
+    }
+    input[type = "email"] {
+                padding: 4px;
+                height: 38px;
+                width: 250px;
+            
+            }
+    .button1{
+        height: 38px;
+        background: #a9508b;
+        border: 0;
+        padding-left: 0px 20px;
+        color: #ffffff;
+    }
+
+
+}
+
+@media only screen and (max-width:768px){
+    #newsletter{
+        .container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+    }
+}
